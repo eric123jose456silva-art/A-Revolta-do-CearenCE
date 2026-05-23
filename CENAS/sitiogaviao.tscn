@@ -1,0 +1,31 @@
+[gd_scene load_steps=5 format=3 uid="uid://lau0dcvetr2m"]
+
+[ext_resource type="Script" uid="uid://b6kog88slcfbb" path="res://Scripts/character_body_2d.gd" id="1_1iy57"]
+[ext_resource type="Texture2D" uid="uid://d1pexv18mcc2j" path="res://Sprites/Gemini_Generated_Image_b2rkz8b2rkz8b2rk.png" id="1_t7s6b"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_t7s6b"]
+size = Vector2(524, 47)
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_nfq86"]
+radius = 14.0
+height = 46.0
+
+[node name="SITIOGAVIAO" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(416.00006, 245.125)
+scale = Vector2(0.576389, 0.44055122)
+texture = ExtResource("1_t7s6b")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(255, 210)
+shape = SubResource("RectangleShape2D_t7s6b")
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+script = ExtResource("1_1iy57")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
+position = Vector2(31, 156)
+shape = SubResource("CapsuleShape2D_nfq86")
