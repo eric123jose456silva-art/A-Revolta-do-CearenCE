@@ -1,6 +1,6 @@
-[gd_scene format=3 uid="uid://b3ibe60ftdvc5"]
+[gd_scene load_steps=3 format=3 uid="uid://b3ibe60ftdvc5"]
 
-[ext_resource type="Texture2D" uid="uid://bhl88xx6vs8k0" path="res://ASSETS/15427932030989612024.jpg" id="1_yacgv"]
+[ext_resource type="Texture2D" uid="uid://5b7jsphgart1" path="res://ASSETS/SPRITES HORTO/15427932030989612024.jpg" id="1_yacgv"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_kgv1x"]
 
