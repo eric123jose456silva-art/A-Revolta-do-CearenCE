@@ -1,4 +1,4 @@
-[gd_scene format=4 uid="uid://cmaql8ewr3u0b"]
+[gd_scene load_steps=0 format=4 uid="uid://cmaql8ewr3u0b"]
 
 [ext_resource type="Texture2D" uid="uid://d05ba3olpjxrq" path="res://Sprites/pipoca_doce.png" id="1_kdgay"]
 [ext_resource type="Script" uid="uid://c7geel3idkgry" path="res://CENAS/teste de personagem.gd" id="2_52ymw"]
