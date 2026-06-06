@@ -48,21 +48,26 @@ sources/3 = SubResource("TileSetAtlasSource_5mena")
 [node name="SITIOGAVIAO" type="Node2D"]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(416.00006, 245.125)
-scale = Vector2(0.576389, 0.44055122)
+position = Vector2(631.4999, 468.5)
+scale = Vector2(0.87430555, 0.7543307)
 texture = ExtResource("1_t7s6b")
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+position = Vector2(159, 490)
+scale = Vector2(0.4999999, 0.51482695)
+texture = ExtResource("5_uuolt")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2(263, 345)
+position = Vector2(263, 631)
 shape = SubResource("RectangleShape2D_t7s6b")
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="."]
 script = ExtResource("2_t7s6b")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
-position = Vector2(30, 293)
+position = Vector2(30, 575)
 shape = SubResource("CapsuleShape2D_nfq86")
 
 [node name="TileMapLayer" type="TileMapLayer" parent="."]
