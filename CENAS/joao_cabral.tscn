@@ -1,3 +1,12 @@
-[gd_scene load_steps=0 format=3 uid="uid://1nrke6qcf8h6"]
+[gd_scene format=3 uid="uid://1nrke6qcf8h6"]
+
+[ext_resource type="Texture2D" uid="uid://dmomi5tyiit5g" path="res://ASSETS/SPRITES JOAOCABRAL/Gemini_Generated_Image_fx3qrbfx3qrbfx3q (1).png" id="1_uly1o"]
 
 [node name="joao_cabral" type="Node2D" unique_id=1767753846]
+
+[node name="BACKGROUND" type="ParallaxBackground" parent="." unique_id=2016188286]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="BACKGROUND" unique_id=634364569]
+
+[node name="Sprite2D" type="Sprite2D" parent="BACKGROUND/ParallaxLayer" unique_id=479261021]
+texture = ExtResource("1_uly1o")
