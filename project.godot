@@ -15,9 +15,11 @@ compatibility/default_parent_skeleton_in_mesh_instance_3d=true
 [application]
 
 config/name="A revolta do cearenCE"
-run/main_scene="uid://lau0dcvetr2m"
+run/main_scene="uid://cmaql8ewr3u0b"
 config/features=PackedStringArray("4.5", "GL Compatibility")
 config/icon="res://icon.svg"
+<<<<<<<HEADrun/main_scene="uid://lau0dcvetr2m"
+<<<<<<<Updatedupstreamrun/main_scene="uid://lau0dcvetr2m"
 
 [editor]
 
