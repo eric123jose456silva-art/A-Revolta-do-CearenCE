@@ -1,23 +1,15 @@
-[gd_scene load_steps=15 format=3 uid="uid://cnw0h6pdv25l"]
+[gd_scene load_steps=13 format=3 uid="uid://c4b407l3j77t1"]
 
 [ext_resource type="Texture2D" uid="uid://5e7tyculb5cw" path="res://ASSETS/ANIMATEDSPRITES PERSONAGEM/ANIMAÇOES.png" id="1_jenbb"]
-[ext_resource type="Script" uid="uid://c3f07xsgx70cs" path="res://SCRIPTS/cicinhoof.gd" id="1_seoe7"]
+[ext_resource type="Script" path="res://SCRIPTS/cicinhoof.gd" id="1_seoe7"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_seoe7"]
 radius = 16.0
 height = 74.0
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_jewtu"]
-atlas = ExtResource("1_jenbb")
-region = Rect2(70, 0, 67, 92)
-
 [sub_resource type="AtlasTexture" id="AtlasTexture_lutxe"]
 atlas = ExtResource("1_jenbb")
 region = Rect2(137, 0, 67, 92)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_cv1kd"]
-atlas = ExtResource("1_jenbb")
-region = Rect2(204, 0, 67, 92)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_24pj1"]
 atlas = ExtResource("1_jenbb")
@@ -51,13 +43,7 @@ region = Rect2(202, 158, 67, 70)
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_jewtu")
-}, {
-"duration": 1.0,
 "texture": SubResource("AtlasTexture_lutxe")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_cv1kd")
 }],
 "loop": true,
 "name": &"idle",
@@ -105,10 +91,9 @@ shape = SubResource("CapsuleShape2D_seoe7")
 position = Vector2(0, 1.9073486e-06)
 scale = Vector2(1.35, 1.2397261)
 sprite_frames = SubResource("SpriteFrames_yby5c")
-animation = &"jump"
+animation = &"idle"
 autoplay = "idle"
-frame = 3
-frame_progress = 0.3086472
+frame_progress = 0.22225821
 
 [node name="Camera2D" type="Camera2D" parent="."]
 limit_left = -50
