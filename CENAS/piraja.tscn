@@ -1,3 +1,18 @@
 [gd_scene format=3 uid="uid://be3arqa7v457d"]
 
+[ext_resource type="Texture2D" uid="uid://b0v4aau8fbydg" path="res://ASSETS/SPRITES PIRAJÁ/Gemini_Generated_Image_7ejd5t7ejd5t7ejd.png" id="1_2pt5g"]
+
+[sub_resource type="TileSet" id="TileSet_oygn3"]
+
 [node name="piraja" type="Node2D" unique_id=1123932163]
+
+[node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=518131715]
+tile_set = SubResource("TileSet_oygn3")
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="." unique_id=1707771746]
+
+[node name="Parallax2D" type="Parallax2D" parent="ParallaxBackground" unique_id=182582399]
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/Parallax2D" unique_id=780716467]
+position = Vector2(688, 388)
+texture = ExtResource("1_2pt5g")

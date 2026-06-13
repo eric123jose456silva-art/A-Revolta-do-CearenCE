@@ -1,6 +1,13 @@
 [gd_scene format=3 uid="uid://1nrke6qcf8h6"]
 
-[ext_resource type="Texture2D" uid="uid://dmomi5tyiit5g" path="res://ASSETS/SPRITES JOAOCABRAL/Gemini_Generated_Image_fx3qrbfx3qrbfx3q (1).png" id="1_uly1o"]
+[ext_resource type="Texture2D" uid="uid://dswcrb2j0pfta" path="res://ASSETS/SPRITES JOAOCABRAL/ChatGPT Image 13 de jun. de 2026, 09_30_51.png" id="2_tre3r"]
+[ext_resource type="PackedScene" uid="uid://cnw0h6pdv25l" path="res://PERSONAGENS/PROTAGONISTA/CICINHOOF.tscn" id="2_wckou"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_uly1o"]
+load_path = "res://.godot/imported/ChatGPT Image 13 de jun. de 2026, 09_30_51.png-62774816568f2ac9691ad5d78055ca9b.ctex"
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pq2j8"]
+size = Vector2(3462, 92.5)
 
 [node name="joao_cabral" type="Node2D" unique_id=1767753846]
 
@@ -8,5 +15,48 @@
 
 [node name="ParallaxLayer" type="ParallaxLayer" parent="BACKGROUND" unique_id=634364569]
 
-[node name="Sprite2D" type="Sprite2D" parent="BACKGROUND/ParallaxLayer" unique_id=479261021]
-texture = ExtResource("1_uly1o")
+[node name="Sprite2D" type="Sprite2D" parent="BACKGROUND/ParallaxLayer" unique_id=575573553]
+position = Vector2(517, 411.25003)
+scale = Vector2(1.0002978, 0.99413013)
+texture = ExtResource("2_tre3r")
+
+[node name="BACKGROUND2" type="ParallaxBackground" parent="." unique_id=1294881334]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="BACKGROUND2" unique_id=2125439731]
+
+[node name="Sprite2D" type="Sprite2D" parent="BACKGROUND2/ParallaxLayer" unique_id=298289447]
+position = Vector2(2150.25, 412)
+scale = Vector2(0.99970216, 0.99252933)
+texture = SubResource("CompressedTexture2D_uly1o")
+
+[node name="BACKGROUND3" type="ParallaxBackground" parent="." unique_id=622651204]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="BACKGROUND3" unique_id=100872898]
+
+[node name="Sprite2D" type="Sprite2D" parent="BACKGROUND3/ParallaxLayer" unique_id=2026017570]
+position = Vector2(3784.9998, 414.00003)
+scale = Vector2(0.9937463, 0.9925293)
+texture = SubResource("CompressedTexture2D_uly1o")
+
+[node name="BACKGROUND4" type="ParallaxBackground" parent="." unique_id=19879882]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="BACKGROUND4" unique_id=1559673095]
+
+[node name="Sprite2D" type="Sprite2D" parent="BACKGROUND4/ParallaxLayer" unique_id=497339025]
+position = Vector2(5408.25, 411)
+scale = Vector2(0.9985111, 0.99466383)
+texture = SubResource("CompressedTexture2D_uly1o")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=361392534]
+position = Vector2(-213, 118)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=1920961690]
+position = Vector2(1487, 605.75)
+shape = SubResource("RectangleShape2D_pq2j8")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="StaticBody2D" unique_id=1272050773]
+position = Vector2(4730, 612)
+shape = SubResource("RectangleShape2D_pq2j8")
+
+[node name="CharacterBody2D" parent="." unique_id=1485183853 instance=ExtResource("2_wckou")]
+position = Vector2(111, 215)
