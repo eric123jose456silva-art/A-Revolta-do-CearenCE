@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://lau0dcvetr2m"]
+[gd_scene load_steps=12 format=3 uid="uid://lau0dcvetr2m"]
 
 [ext_resource type="Texture2D" uid="uid://caf5t5r1e4k0q" path="res://ASSETS/SPRITES_GAVIAO/Gemini_Generated_Image_b2rkz8b2rkz8b2rk.png" id="1_t7s6b"]
 [ext_resource type="Texture2D" uid="uid://r4s6cxe4tp53" path="res://ASSETS/SPRITES_GAVIAO/A Revolta do CearenCE - CÉU.png" id="2_bhg0v"]
@@ -7,9 +7,11 @@
 [ext_resource type="Texture2D" uid="uid://co4atp7gfstbv" path="res://ASSETS/SPRITES_GAVIAO/A Revolta do cearenCE - CERCA.png" id="4_l2lyq"]
 [ext_resource type="Texture2D" uid="uid://cslbrkgajd82f" path="res://ASSETS/SPRITES_GAVIAO/A Revolta do CearenCE - PORTÃO.png" id="5_rwmwd"]
 [ext_resource type="Texture2D" uid="uid://bbp0h3yoarjl7" path="res://ASSETS/SPRITES_GAVIAO/download.png" id="5_uuolt"]
+[ext_resource type="Texture2D" uid="uid://byruxiboraegm" path="res://ASSETS/SPRITES/A Revolta do CearenCE - PLACA.png" id="6_rwmwd"]
+[ext_resource type="Texture2D" uid="uid://bxbop3raflkyg" path="res://ASSETS/SPRITES_GAVIAO/A Revolta do CearenCE - CACTO#1.png" id="7_5mena"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1iy57"]
-size = Vector2(1168, 52)
+size = Vector2(4123.5, 52)
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_t7s6b"]
 radius = 32.0
@@ -17,42 +19,63 @@ height = 92.0
 
 [node name="sitiogaviao" type="Node2D"]
 
-[node name="Node2D" type="Node2D" parent="."]
+[node name="SPRITES" type="Node2D" parent="."]
 
-[node name="CHAO" type="Sprite2D" parent="Node2D"]
-position = Vector2(1036, 331.25)
-scale = Vector2(1.4305556, 1.0070866)
+[node name="Sprite2D2" type="Sprite2D" parent="SPRITES"]
+position = Vector2(3088.5, 333.375)
+scale = Vector2(1.4243056, 1.0153544)
 texture = ExtResource("1_t7s6b")
 
-[node name="CÉU" type="Sprite2D" parent="Node2D"]
-position = Vector2(1070, -0.5)
-scale = Vector2(1, 0.55110496)
-texture = ExtResource("2_bhg0v")
+[node name="CHAO" type="Sprite2D" parent="SPRITES"]
+position = Vector2(1032, 331.25)
+scale = Vector2(1.4361111, 1.0070866)
+texture = ExtResource("1_t7s6b")
 
-[node name="MATO SECO" type="Sprite2D" parent="Node2D"]
+[node name="Sprite2D" type="Sprite2D" parent="SPRITES"]
+position = Vector2(3081.625, 138.5)
+scale = Vector2(2.5794597, 2.6805112)
+texture = ExtResource("3_uuolt")
+flip_h = true
+
+[node name="MATO SECO" type="Sprite2D" parent="SPRITES"]
 position = Vector2(1029.0001, 144.00003)
 scale = Vector2(2.58794, 2.6325881)
 texture = ExtResource("3_uuolt")
 
-[node name="CERCA #1" type="Sprite2D" parent="Node2D"]
-position = Vector2(594, 467)
+[node name="CERCA #1" type="Sprite2D" parent="SPRITES"]
+position = Vector2(593.00006, 469)
 scale = Vector2(2.1388888, 2.1136365)
 texture = ExtResource("4_l2lyq")
 
-[node name="Sprite2D" type="Sprite2D" parent="Node2D"]
-position = Vector2(1115, 469)
-scale = Vector2(1, 1.537037)
+[node name="CERCA #2" type="Sprite2D" parent="SPRITES"]
+position = Vector2(1696.9999, 467)
+scale = Vector2(2.1388888, 2.1136365)
+texture = ExtResource("4_l2lyq")
+
+[node name="PORTÃO" type="Sprite2D" parent="SPRITES"]
+position = Vector2(1149, 496)
+scale = Vector2(1.8128492, 1.9629631)
 texture = ExtResource("5_rwmwd")
 
-[node name="CASA" type="Sprite2D" parent="Node2D"]
+[node name="CASA" type="Sprite2D" parent="SPRITES"]
 position = Vector2(316, 343.25)
 scale = Vector2(1, 1.0815486)
 texture = ExtResource("5_uuolt")
 
+[node name="PLACA" type="Sprite2D" parent="SPRITES"]
+position = Vector2(920, 467.00003)
+scale = Vector2(1.5404041, 1.4810127)
+texture = ExtResource("6_rwmwd")
+
+[node name="CACTO #1" type="Sprite2D" parent="SPRITES"]
+position = Vector2(633, 534.00006)
+scale = Vector2(1.8170732, 1.3356165)
+texture = ExtResource("7_5mena")
+
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2(574, 581)
+position = Vector2(2052.25, 608)
 shape = SubResource("RectangleShape2D_1iy57")
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="."]
@@ -65,3 +88,17 @@ shape = SubResource("CapsuleShape2D_t7s6b")
 [node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
 position = Vector2(168, 291)
 limit_left = 0
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="CÉU" type="ParallaxLayer" parent="ParallaxBackground"]
+position = Vector2(0, -328)
+motion_scale = Vector2(0, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/CÉU"]
+texture_repeat = 2
+scale = Vector2(3.5972223, 2.591346)
+texture = ExtResource("2_bhg0v")
+centered = false
+region_enabled = true
+region_rect = Rect2(0, 0, 576, 208)
