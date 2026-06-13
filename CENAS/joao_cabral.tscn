@@ -9,6 +9,10 @@ load_path = "res://.godot/imported/ChatGPT Image 13 de jun. de 2026, 09_30_51.pn
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_pq2j8"]
 size = Vector2(3462, 92.5)
 
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_tre3r"]
+radius = 26.0
+height = 224.0
+
 [node name="joao_cabral" type="Node2D" unique_id=1767753846]
 
 [node name="BACKGROUND" type="ParallaxBackground" parent="." unique_id=2016188286]
@@ -16,8 +20,8 @@ size = Vector2(3462, 92.5)
 [node name="ParallaxLayer" type="ParallaxLayer" parent="BACKGROUND" unique_id=634364569]
 
 [node name="Sprite2D" type="Sprite2D" parent="BACKGROUND/ParallaxLayer" unique_id=575573553]
-position = Vector2(517, 411.25003)
-scale = Vector2(1.0002978, 0.99413013)
+position = Vector2(516.625, 412)
+scale = Vector2(0.9998511, 0.9925294)
 texture = ExtResource("2_tre3r")
 
 [node name="BACKGROUND2" type="ParallaxBackground" parent="." unique_id=1294881334]
@@ -25,8 +29,8 @@ texture = ExtResource("2_tre3r")
 [node name="ParallaxLayer" type="ParallaxLayer" parent="BACKGROUND2" unique_id=2125439731]
 
 [node name="Sprite2D" type="Sprite2D" parent="BACKGROUND2/ParallaxLayer" unique_id=298289447]
-position = Vector2(2150.25, 412)
-scale = Vector2(0.99970216, 0.99252933)
+position = Vector2(2150, 413)
+scale = Vector2(0.99940425, 0.99039495)
 texture = SubResource("CompressedTexture2D_uly1o")
 
 [node name="BACKGROUND3" type="ParallaxBackground" parent="." unique_id=622651204]
@@ -34,8 +38,8 @@ texture = SubResource("CompressedTexture2D_uly1o")
 [node name="ParallaxLayer" type="ParallaxLayer" parent="BACKGROUND3" unique_id=100872898]
 
 [node name="Sprite2D" type="Sprite2D" parent="BACKGROUND3/ParallaxLayer" unique_id=2026017570]
-position = Vector2(3784.9998, 414.00003)
-scale = Vector2(0.9937463, 0.9925293)
+position = Vector2(3785.1248, 413.00006)
+scale = Vector2(0.9935973, 0.9903949)
 texture = SubResource("CompressedTexture2D_uly1o")
 
 [node name="BACKGROUND4" type="ParallaxBackground" parent="." unique_id=19879882]
@@ -43,9 +47,17 @@ texture = SubResource("CompressedTexture2D_uly1o")
 [node name="ParallaxLayer" type="ParallaxLayer" parent="BACKGROUND4" unique_id=1559673095]
 
 [node name="Sprite2D" type="Sprite2D" parent="BACKGROUND4/ParallaxLayer" unique_id=497339025]
-position = Vector2(5408.25, 411)
-scale = Vector2(0.9985111, 0.99466383)
+position = Vector2(5408.75, 413.99994)
+scale = Vector2(0.9979155, 0.99252933)
 texture = SubResource("CompressedTexture2D_uly1o")
+
+[node name="BACKGROUND6" type="ParallaxBackground" parent="." unique_id=277484538]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="BACKGROUND6" unique_id=9091628]
+
+[node name="Sprite2D" type="Sprite2D" parent="BACKGROUND6/ParallaxLayer" unique_id=2009900977]
+position = Vector2(7033.0005, 414.99997)
+scale = Vector2(0.9979155, 0.99252933)
 
 [node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=361392534]
 position = Vector2(-213, 118)
@@ -60,3 +72,10 @@ shape = SubResource("RectangleShape2D_pq2j8")
 
 [node name="CharacterBody2D" parent="." unique_id=1485183853 instance=ExtResource("2_wckou")]
 position = Vector2(111, 215)
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="." unique_id=1450736015]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D2" unique_id=128083377]
+position = Vector2(42, 243)
+rotation = -0.6000502
+shape = SubResource("CapsuleShape2D_tre3r")
