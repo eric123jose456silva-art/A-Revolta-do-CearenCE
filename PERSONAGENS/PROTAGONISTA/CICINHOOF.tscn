@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://cnw0h6pdv25l"]
+[gd_scene format=3 uid="uid://cnw0h6pdv25l"]
 
 [ext_resource type="Texture2D" uid="uid://5e7tyculb5cw" path="res://ASSETS/ANIMATEDSPRITES PERSONAGEM/ANIMAÇOES.png" id="1_jenbb"]
 [ext_resource type="Script" uid="uid://c3f07xsgx70cs" path="res://SCRIPTS/cicinhoof.gd" id="1_seoe7"]
