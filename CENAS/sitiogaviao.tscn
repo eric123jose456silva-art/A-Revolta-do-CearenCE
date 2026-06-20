@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://lau0dcvetr2m"]
+[gd_scene load_steps=11 format=3 uid="uid://lau0dcvetr2m"]
 
 [ext_resource type="Texture2D" uid="uid://caf5t5r1e4k0q" path="res://ASSETS/SPRITES_GAVIAO/Gemini_Generated_Image_b2rkz8b2rkz8b2rk.png" id="1_t7s6b"]
 [ext_resource type="Texture2D" uid="uid://r4s6cxe4tp53" path="res://ASSETS/SPRITES_GAVIAO/A Revolta do CearenCE - CÉU.png" id="2_bhg0v"]
@@ -7,6 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://co4atp7gfstbv" path="res://ASSETS/SPRITES_GAVIAO/A Revolta do cearenCE - CERCA.png" id="4_l2lyq"]
 [ext_resource type="Texture2D" uid="uid://cslbrkgajd82f" path="res://ASSETS/SPRITES_GAVIAO/A Revolta do CearenCE - PORTÃO.png" id="5_rwmwd"]
 [ext_resource type="Texture2D" uid="uid://bbp0h3yoarjl7" path="res://ASSETS/SPRITES_GAVIAO/download.png" id="5_uuolt"]
+[ext_resource type="PackedScene" uid="uid://cnw0h6pdv25l" path="res://PERSONAGENS/PROTAGONISTA/CICINHOOF.tscn" id="8_l2lyq"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1iy57"]
 size = Vector2(1168, 52)
@@ -65,3 +66,6 @@ shape = SubResource("CapsuleShape2D_t7s6b")
 [node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
 position = Vector2(168, 291)
 limit_left = 0
+
+[node name="CharacterBody2D2" parent="." instance=ExtResource("8_l2lyq")]
+position = Vector2(53, 346)
