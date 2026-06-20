@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://1nrke6qcf8h6"]
+[gd_scene load_steps=6 format=3 uid="uid://1nrke6qcf8h6"]
 
 [ext_resource type="Texture2D" uid="uid://dswcrb2j0pfta" path="res://ASSETS/SPRITES JOAOCABRAL/ChatGPT Image 13 de jun. de 2026, 09_30_51.png" id="2_tre3r"]
 [ext_resource type="PackedScene" uid="uid://cnw0h6pdv25l" path="res://PERSONAGENS/PROTAGONISTA/CICINHOOF.tscn" id="2_wckou"]
+[ext_resource type="PackedScene" uid="uid://bb0c8rwblun3a" path="res://PERSONAGENS/INIMIGOS/lampiao.tscn" id="3_wckou"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_uly1o"]
 load_path = "res://.godot/imported/ChatGPT Image 13 de jun. de 2026, 09_30_51.png-62774816568f2ac9691ad5d78055ca9b.ctex"
@@ -10,6 +11,7 @@ load_path = "res://.godot/imported/ChatGPT Image 13 de jun. de 2026, 09_30_51.pn
 size = Vector2(3462, 92.5)
 
 [node name="joao_cabral" type="Node2D"]
+metadata/_edit_horizontal_guides_ = [107.0, 690.0]
 
 [node name="BACKGROUND" type="ParallaxBackground" parent="."]
 
@@ -59,4 +61,33 @@ position = Vector2(4730, 612)
 shape = SubResource("RectangleShape2D_pq2j8")
 
 [node name="CharacterBody2D" parent="." instance=ExtResource("2_wckou")]
-position = Vector2(111, 215)
+position = Vector2(506, 523)
+
+[node name="CollisionShape2D" parent="CharacterBody2D" index="0"]
+position = Vector2(-21, 24)
+
+[node name="AnimatedSprite2D" parent="CharacterBody2D" index="2"]
+position = Vector2(-11.112493, 13.513708)
+scale = Vector2(1.0182838, 0.94594985)
+
+[node name="LAMPIAO" parent="." instance=ExtResource("3_wckou")]
+position = Vector2(885, 520)
+
+[node name="LAMPIAO2" parent="." instance=ExtResource("3_wckou")]
+position = Vector2(2144, 521)
+
+[node name="LAMPIAO3" parent="." instance=ExtResource("3_wckou")]
+position = Vector2(3025, 440)
+
+[node name="LAMPIAO4" parent="." instance=ExtResource("3_wckou")]
+position = Vector2(3772, 433)
+
+[node name="LAMPIAO5" parent="." instance=ExtResource("3_wckou")]
+position = Vector2(4490, 418)
+
+[editable path="CharacterBody2D"]
+[editable path="LAMPIAO"]
+[editable path="LAMPIAO2"]
+[editable path="LAMPIAO3"]
+[editable path="LAMPIAO4"]
+[editable path="LAMPIAO5"]
